@@ -49,6 +49,7 @@
             this.btnAdd.TabIndex = 1;
             this.btnAdd.Text = "추가";
             this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.BtnAdd_Click);
             // 
             // lbView
             // 
@@ -58,6 +59,7 @@
             this.lbView.Name = "lbView";
             this.lbView.Size = new System.Drawing.Size(370, 196);
             this.lbView.TabIndex = 2;
+            this.lbView.SelectedIndexChanged += new System.EventHandler(this.LbView_SelectedIndexChanged);
             // 
             // lblResult
             // 
@@ -80,6 +82,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Form1";
             this.Text = "리스트 추가";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
